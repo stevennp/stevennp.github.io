@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Email Me!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
+
+  <link rel ="stylesheet" href = "../css/home-styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class ="navbar-container">
+    <div class = "navbar">
+      <img src= "../images/logo.png">
+      <a href ="../index.html"><div>home</div></a>
+      <div>about</div>
+      <a href = "#"><div>contact</div></a>
+      <a href = "my-pet.html"><div>my pet</div></a>
+      <a href = "fan-webpage.html"><div>my interest</div></a>
+    </div>
+  </div>
+
+  <form method="POST" action="https://formspree.io/spham202@gmail.com">
+    <div>
+      <p>name:</p><input name = "name" type = "text">
+    </div>
+
+    <div>
+      <p>your email:</p><input name = "email" type = "text">
+    </div>
+
+
+    <div>
+      <p>today's date:</p><input name = "date" type = "date">
+    </div>
+
+    <div>
+      <p>Select your favorite color: (Just for fun!)</p>
+      <input type="color" name="favcolor" value="#f8f8ff">
+    </div>
+
+    <div>
+      <p>gender:</p>
+      M<input type="radio" name="gender">
+      F<input type="radio" name="gender">
+      N/A<input type="radio" name="gender">
+    </div>
+
+    <div>
+      <p>How important is this message? Check all that apply.</p>
+      <input type="checkbox" name="importance0" value="SUPERRR">SUPERRR important
+      <input type="checkbox" name="importance1" value="super">super important
+      <input type="checkbox" name="importance2" value="extremely"> extremely important
+      <input type="checkbox" name="importance3" value="very">very important
+      <input type="checkbox" name="importance4" value="kinda"> kinda important
+      <input type="checkbox" name="importance5" value="not really">not really that important
+      <input type="checkbox" name="importance6" value="nah">  ehh.. it can wait
+    </div>
+
+    <div>
+      <p> your message: </p>
+      <textarea name = "message" id="" cols ="30" rows = "10"></textarea>
+    </div>
+
+    <input type="submit" name = "submit" value = "send-form">
+
+  </form>
+
+</body>
+</html>

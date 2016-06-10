@@ -1,0 +1,138 @@
+/*the body text contains same font and eliminates the margin within the html page*/
+/*the color of the texts should be uniform*/
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  color: #E2C044;
+}
+
+*{
+  background-color: #174A66;
+}
+
+/*h1 and the navigation bar elements has the same font and is centers all the text based element*/
+h1, .navbar div{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+/*gives the horizontal row color and a border while taking out the margin that the browser assigns*/
+hr{
+  margin: 0 auto;
+  border: 1px solid #E2C044;
+}
+
+/* any reference link should have no underline and the consistent coloring*/
+a{
+  text-decoration: none;
+  color: #E2C044;
+}
+
+/*when hovering over the link and navbar, the text should become whitish*/
+a:hover, .navbar div:hover{
+  color: #ffffdf;
+}
+
+/*set max width as 700px so the browser does not exceed or minimize it*/
+/*padding for extra space*/
+form {
+  max-width: 700px;
+  padding: 15px;
+  text-align: center; /*for any inline elements aka text like the p tags*/
+  margin: 0 auto; /*for any block elements/tags within the form tag*/
+}
+
+/*any input tag that are not radio, the checkboxes, submit, or the color swatch should have a white background, size 30 font, and a width of 80% of the max*/
+input:not([type="radio"]):not([type="checkbox"]):not([type="color"]):not([type="submit"]), textarea{
+  height: 30px;
+  background-color: white;
+  font-size: 30px;
+  width: 80%;
+}
+
+/*any paragraph text within the form tag should be size 30 font*/
+form p{
+  font-size: 30px;
+}
+
+/*the area for the message to be typed should be 250 height and have no resizing property*/
+textarea{
+  height: 250px;
+  resize: none;
+}
+
+/*idk why but for the submit input tag, need to redeclare font size to make send form  text smaller but otherwise it has the same properies as the other tags but it has a top margin to create space*/
+input[type="submit"]{
+  background-color: white;
+  margin-top: 15px;
+  font-size: 10px;
+  width: 80%;
+}
+
+/*padding creates empty space around image to avoid touching the hr's and the color is the section between the two hr's*/
+.picture-style{
+  padding:10px;
+  background-color: #1D5D7F;
+}
+
+/*centers image by converting to a block and  using margin 0 while retaining a width of 500 pixels and a creating a border*/
+.picture-style img{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  border: 2px solid #E2C044;
+}
+
+/*navbar done in class*/
+.navbar{
+  width:100%;/*full size of browser*/
+  position: fixed;/*stays in the same place even if the page is scrolled*/
+  top: 0px; /*lock at 0 pixel position*/
+  text-align: center; /*makes elements inside centered in the middle of the navigation bar*/
+  border: 2px solid #E2C044;
+}
+
+/*any element inside the navbar should be centered, maintain space between each other and have padding to avoid being glued to the top of the page, with a default font size*/
+.navbar div{
+  display: inline-block;
+  width: 100px;
+  margin: 0px -2px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+
+/*to create/allocate space for the navbar on the page thru the container*/
+.navbar, .navbar-container, .navbar div, .navbar img{
+  height:100px;
+}
+
+/*when hovering over the navbar, it has a different color*/
+.navbar div:hover{
+  background-color: #173e43;
+}
+
+/*when clicking the navbar, it has a different color*/
+.navbar div:active{
+  background-color: #173e39;
+}
+
+/*centers the text based elements*/
+.center-text{
+  text-align: center;
+}
+
+/*add an image/logo that is on the left of the navbar e.g. float left*/
+.navbar img{
+  padding-left: 1px;
+  float:left;
+}
+
+ul{
+  border: 4px dotted;
+}
+
+li{
+  padding: 10px;
+}
+
+/*all the tags e.g. <a>, <p>, <li> tags all have the same font size unless specified

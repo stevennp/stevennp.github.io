@@ -1,0 +1,44 @@
+body{
+  background-color: #EF629F;
+  background: linear-gradient(to right, #EECD45, #EF629F);
+  font-family: futura;
+  color: white;
+}
+.center-image{
+  border:2px solid white;
+  box-shadow: 3px 3px 8px lightpink;
+  margin: 0 auto;
+  display: block;
+}
+
+b{
+  color: white;
+  text-decoration:underline;
+}
+.body-text{
+  text-align: center;
+}
+
+.header{
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+hr
+{
+  color :white;
+}
+
+ul a{
+  list-style-type: square;
+  color: black;
+}
+
+a:hover{
+  color:white;
+}
+
+.project-media{
+  margin: 0 auto;
+  display: block;
+}
