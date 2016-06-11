@@ -3,57 +3,93 @@
 <head>
   <meta charset="utf-8">
   <title>Steven Pham's website!</title>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
 
-  <link rel ="stylesheet" href = "css/home-styles.css">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "css/bootstrap-styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-  <div class ="navbar-container">
-    <div class = "navbar">
-      <img src= "images/logo.png">
-      <a href ="#"><div>home</div></a>
-      <div>about</div>
-      <a href = "pages/contact-me.html"><div>contact</div></a>
-      <a href = "pages/my-pet.html"><div>my pet</div></a>
-      <a href = "pages/fan-webpage.html"><div>my interest</div></a>
+  <div class = "container-fluid no-padding">
+    <nav class = "navbar navbar-default navbar-inverse" role = "navigation">
+
+      <div class = " navbar-header">
+        <button type = "button" class = "navbar-toggle"
+        data-toggle = "collapse" data-target = "#example-navbar-collapse">
+        <span class = "sr-only">Toggle navigation</span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+      </button>
+
+      <a href="#" class="pull-left"><img class = "img-circle brand-custom" src="images/logo.JPG"></a>
+    </div>
+
+    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+
+      <ul class = "nav navbar-nav">
+        <li><a href = "#">Home</a></li>
+        <li><a href = "#">About</a></li>
+        <li><a href = "#">Work</a></li>
+        <li><a href = "#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class = "jumbotron">
+  <div class = "container custom-text">
+    <h1>I'm Steven</h1>
+    <p>I try to do web design.</p>
+  </div>
+</div>
+
+<section id = "hello">
+  <div class = "container">
+    <div class = "row">
+      <div class = "cols-md-12">
+        <article>
+          <figure>
+            <img class = "img-circle" src = "images/hi-logo.JPG">
+          </figure>
+          <h3>Hi.</h3>
+          <p>I'm an aspiring web designer / developer based in Los Angeles, California. I have a passion for web design and love to create for web and mobile devices.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class = "container">
+  <div class = "row">
+    <hr class="style14">
+  </div>
+</div>
+
+
+<div class = "container text-center btn-margin">
+  <div class = "row">
+    <div class="col-md-12">
+      <a class="btn btn-default" href="#" role="button">
+        MESSAGE ME</a>
+      </div>
     </div>
   </div>
 
-  <div>
-    <h1>All about me!</h1>
-  </div>
 
-  <hr>
-
-
-  <div class = "picture-style">
-    <a href = "http://www.linkedin.com/in/stevennp">
-      <img src = "images/steven.jpg">
-    </a>
-  </div>
-
-  <hr>
-
-  <div>
-    <br>
-    <div class = "center-text">
-      <a href = "http://www.linkedin.com/in/stevennp"> Click on my face above or this sentence you're reading to visit my LinkedIn profile!</a>
-    </div>
-    <p> Hi, my name is Steven Pham! </p>
-    <p> Here are some facts about me! </p>
-
-    <ul style="list-style-type:square">
-      <li> I am a sophomore at <a href ="http://usc.edu"> USC.</a> </li>
-      <li> My major is Industrial and Systems Engineering. </li>
-      <li> I was born and raised in Los Angeles. </li>
-      <li><b> I'm bold! Haha... no? </b></li>
-      <li> I play basketball and I am a diehard Lakers Fan.</li>
-      <!--add more stuff... -->
-    </ul>
-    <p class ="center-text"> Thanks for visiting! </p>
-  </div>
 </body>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- bootstrap's javascript file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </html>
