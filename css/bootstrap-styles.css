@@ -37,12 +37,24 @@ body{
 .jumbotron{
   background-image: url("../images/jumbotron.jpg");
   background-size: cover;
-  height: 100vh;
   padding-top: 150px;
 }
 
 .jumbotron h1{
   font-size: 100px;
+}
+
+#jumboScroll {
+  background: url("../images/jumbotron.jpg") no-repeat center center fixed;
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
 }
 .custom-text{
   text-align: center;
